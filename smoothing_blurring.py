@@ -8,7 +8,6 @@ img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 #homogeneous filter
 kernel = np.ones((5,5), np.float32)/25
 dst = cv.filter2D(img,-1,kernel) # it's a LOW PASS FILTER that helps to remove noise
-#HIGH PASS FILTER is used to find edges in the image
 blur = cv.blur(img,(5,5))
 gaussianBlur = cv.GaussianBlur(img, (5,5), 0)
 medianBlur = cv.medianBlur(img, 5)
