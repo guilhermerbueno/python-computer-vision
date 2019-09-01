@@ -1,4 +1,6 @@
-import numpy as np
+import numpy as n
+import matplotlib
+import tkinterp
 import cv2
 
 img = np.zeros([640, 480, 3], np.uint8) #cv2.imread('lena.jpg',1)
